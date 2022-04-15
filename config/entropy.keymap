@@ -25,6 +25,8 @@
 // | DNP   | DOT   | DNP   | 0     | CTRL  | GUI   |       | ALT   |       | LSPCE | SPACE |       | RSPC  |       | ALT   | DNP   | CTRL  | LEFT  | DOWN  | RIGHT |
 
 
+
+
 / {
     macros {
         M1: M1 {
@@ -48,10 +50,6 @@
                 ;
         };
     };
-};
-
-
-/ {
         keymap {
                 compatible = "zmk,keymap";
 

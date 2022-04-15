@@ -28,28 +28,6 @@
 
 
 / {
-    macros {
-        M1: M1 {
-            label = "ZM_M1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp EQUAL>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-        M2: M2 {
-            label = "ZM_M2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp MINUS>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-    };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -65,7 +43,7 @@
     &kp KP_ENTER &kp KP_DOT      &trans        &kp KP_N0    &kp LCTRL &kp LGUI         &kp LALT         &trans        &kp SPACE        &trans            &kp RALT &trans    &kp RCTRL &kp LEFT   &kp DOWN &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp &M1 &M2 &inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp EQUAL MINUS &inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
                 mod_layer_1 {
